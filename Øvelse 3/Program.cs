@@ -37,9 +37,9 @@ namespace Øvelse_3
     {
         static void Main(string[] args)
         {
-            MyClass mc = new MyClass();
-            Thread t1 = new Thread(mc.CheckTemp);
-            t1.Start();
+            MyClass mc = new MyClass();//Creates an object for the class
+            Thread t1 = new Thread(mc.CheckTemp);//Creates a thread using the method
+            t1.Start();//Starts the thread
             Console.Read();
         }
     }
